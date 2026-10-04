@@ -24,6 +24,9 @@ dist-ssr
 *.sw?
 
 # secrets and uploaded files
+.gitpasswd
+database.php
+db.php
 public/login/library/database.php
 public/files/*
 !public/files/.gitkeep
