@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.editorscrollbar::-webkit-scrollbar {
+width: 12px;
+}
+
+.editorscrollbar::-webkit-scrollbar-thumb {
+background-color: #4a5568; /* Barva scrollbaru */
+border-radius: 6px;        /* Zaoblení scrollbaru */
+}
+
+.editorscrollbar::-webkit-scrollbar-track {
+background-color: #2d3748; /* Barva pozadí scrollbaru */
+}
+
+.editorscrollbar {
+scrollbar-width: thin;          /* Pro Firefox: tenký scrollbar */
+scrollbar-color: #4a5568 #2d3748; /* Barva scrollbaru a pozadí pro Firefox */
+}
+
+.dropdown li ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+}
+.dropdown li {
+    position: relative;
+}
+.dropdown:hover li ul {
+    display: flex;
+    background-color: rgb(17 24 39);
+    color: #ffffff;
+    width: max-content;
+    border-radius: 5px;
+}
+
+.editor_close_confirmation_option:hover {
+    cursor: pointer;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
